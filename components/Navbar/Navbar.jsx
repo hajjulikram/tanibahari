@@ -1,23 +1,23 @@
-import React from "react";
-import Image from "next/image";
-import Icon from "@mdi/react";
-import Link from "next/link";
-import { mdiEmail, mdiWhatsapp, mdiHelpCircleOutline, mdiBell } from "@mdi/js";
+import React from 'react';
+import Image from 'next/image';
+import Icon from '@mdi/react';
+import Link from 'next/link';
+import { mdiEmail, mdiWhatsapp, mdiHelpCircleOutline, mdiBell } from '@mdi/js';
 
 function Navbar() {
   return (
     <div>
       <header className=" h-14 border-b-2 px-24 flex items-center justify-end">
         <ul className="flex gap-6 text-tani-grey">
-          <li className="flex gap-2 hover:text-green-400 cursor-pointer">
+          <li className="flex gap-2 hover:text-tani-green cursor-pointer">
             <Icon path={mdiEmail} size={1} />
             <span>cs@tanibahari.com</span>
           </li>
-          <li className="flex gap-2 hover:text-green-400 cursor-pointer">
+          <li className="flex gap-2 hover:text-tani-green cursor-pointer">
             <Icon path={mdiWhatsapp} size={1} />
             <span>081264694142</span>
           </li>
-          <li className="flex gap-2 hover:text-green-400 cursor-pointer">
+          <li className="flex gap-2 hover:text-tani-green cursor-pointer">
             <Icon path={mdiHelpCircleOutline} size={1} />
             <span>Help Center</span>
           </li>
@@ -34,7 +34,7 @@ function Navbar() {
             height={800}
           />
         </div>
-        <button className="text-2xl">Kategori</button>
+        <button className="text-xl">Kategori</button>
 
         <form className="w-1/2">
           <label
@@ -83,13 +83,13 @@ function Navbar() {
 
         <div className="flex gap-3 items-center">
           <Link
-            href={"/auth/login"}
+            href={'/auth/login'}
             className="px-5 py-1 rounded-lg bg-tani-green text-tani-yellow font-semibold"
           >
             Masuk
           </Link>
           <Link
-            href={"/auth/register"}
+            href={'/auth/register'}
             className="px-5 py-1 rounded-lg bg-tani-blue text-tani-yellow font-semibold"
           >
             Daftar
