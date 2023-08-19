@@ -9,15 +9,15 @@ function Navbar() {
     <div>
       <header className=" h-14 border-b-2 px-24 flex items-center justify-end">
         <ul className="flex gap-6 text-tani-grey">
-          <li className="flex gap-2 hover:text-tani-green cursor-pointer">
+          <li className="flex gap-2 hover:text-green-400 cursor-pointer">
             <Icon path={mdiEmail} size={1} />
             <span>cs@tanibahari.com</span>
           </li>
-          <li className="flex gap-2 hover:text-tani-green cursor-pointer">
+          <li className="flex gap-2 hover:text-green-400 cursor-pointer">
             <Icon path={mdiWhatsapp} size={1} />
             <span>081264694142</span>
           </li>
-          <li className="flex gap-2 hover:text-tani-green cursor-pointer">
+          <li className="flex gap-2 hover:text-green-400 cursor-pointer">
             <Icon path={mdiHelpCircleOutline} size={1} />
             <span>Help Center</span>
           </li>
@@ -34,7 +34,7 @@ function Navbar() {
             height={800}
           />
         </div>
-        <button className="text-xl">Kategori</button>
+        <button className="text-2xl">Kategori</button>
 
         <form className="w-1/2">
           <label
