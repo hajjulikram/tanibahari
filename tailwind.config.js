@@ -1,26 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/flowbite/**/*.js",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/flowbite/**/*.js',
   ],
   theme: {
     extend: {
       colors: {
-        "tani-grey": "#a3a3a3",
-        "tani-green": "#0F9062",
-        "tani-yellow": "#FAFF00",
-        "tani-blue": "#156C99",
+        'tani-grey': '#a3a3a3',
+        'tani-green': '#0F9062',
+        'tani-yellow': '#FAFF00',
+        'tani-blue': '#156C99',
       },
       width: {
-        552: "552px",
+        552: '552px',
       },
       backgroundImage: {
-        "auth": "url('/assets/images/bg-login.jpg')",
+        auth: "url('/assets/images/bg-login.jpg')",
       },
     },
+    container: {
+      center: true,
+    },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require('flowbite/plugin')],
 };
