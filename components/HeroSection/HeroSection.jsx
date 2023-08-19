@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,26 +10,31 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination, Keyboard } from 'swiper/modules';
 
 export default function HeroSection() {
+
+  const imageList = [
+    "/assets/images/swiper/banner-1.jpg",
+    "/assets/images/swiper/banner-2.jpg",
+    "/assets/images/swiper/banner-3.jpg",
+  ];
+
   return (
-    <div className="container">
+    <div className="lg:px-24 px-5">
       <Swiper
-        rewind={true}
-        cssMode={true}
+        rewind={false}
         pagination={true}
         keyboard={true}
+        loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Keyboard]}
-        className="mySwiper"
+        className="mySwiper w-full  lg:h-96 h-36 rounded-lg"
       >
-        {[...Array(3).keys()].map((i) => (
-          // eslint-disable-next-line react/jsx-key
-          <SwiperSlide className="swiper-slide">
-            <img src={`/assets/images/swiper/${i + 1}.jpg`} alt="" />
-          </SwiperSlide>
+        {imageList.map((image, i) => (
+          <SwiperSlide className="swiper-slide rounded-lg bg-cover bg-center" key={i} style={{backgroundImage: `url(${image})`}}/>
         ))}
+      
       </Swiper>
     </div>
   );

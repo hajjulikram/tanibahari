@@ -7,8 +7,8 @@ import { mdiEmail, mdiWhatsapp, mdiHelpCircleOutline, mdiBell } from '@mdi/js';
 function Navbar() {
   return (
     <div>
-      <header className=" h-14 border-b-2 px-24 flex items-center justify-end">
-        <ul className="flex gap-6 text-tani-grey">
+      <header className=" h-14 border-b-2 lg:px-24 px-5 flex items-center lg:justify-end">
+        <ul className="flex gap-6 text-tani-grey text-xs">
           <li className="flex gap-2 hover:text-tani-green cursor-pointer">
             <Icon path={mdiEmail} size={1} />
             <span>cs@tanibahari.com</span>
