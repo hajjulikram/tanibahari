@@ -22,7 +22,13 @@ module.exports = {
       },
     },
     container: {
-      center: true,
+      padding: {
+        DEFAULT: '3rem',
+        sm: '4rem',
+        lg: '5rem',
+        xl: '6rem',
+        '2xl': '7rem',
+      },
     },
   },
   plugins: [require('flowbite/plugin')],

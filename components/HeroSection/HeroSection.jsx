@@ -1,7 +1,6 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,11 +9,10 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination, Keyboard } from 'swiper/modules';
 
 export default function HeroSection() {
-
   const imageList = [
-    "/assets/images/swiper/banner-1.jpg",
-    "/assets/images/swiper/banner-2.jpg",
-    "/assets/images/swiper/banner-3.jpg",
+    '/assets/images/swiper/banner-1.jpg',
+    '/assets/images/swiper/banner-2.jpg',
+    '/assets/images/swiper/banner-3.jpg',
   ];
 
   return (
@@ -32,9 +30,12 @@ export default function HeroSection() {
         className="mySwiper w-full  lg:h-96 h-36 rounded-lg"
       >
         {imageList.map((image, i) => (
-          <SwiperSlide className="swiper-slide rounded-lg bg-cover bg-center" key={i} style={{backgroundImage: `url(${image})`}}/>
+          <SwiperSlide
+            className="swiper-slide rounded-lg bg-cover bg-center"
+            key={i}
+            style={{ backgroundImage: `url(${image})` }}
+          />
         ))}
-      
       </Swiper>
     </div>
   );
