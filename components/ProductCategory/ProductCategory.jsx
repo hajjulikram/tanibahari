@@ -1,5 +1,5 @@
 'use client';
-import dataCategory from '@/utils/dataCategory';
+import data from '@/utils/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -12,10 +12,10 @@ const ProductCategory = () => {
       </h1>
 
       <div className="flex flex-nowrap gap-1 -mx-5 overflow-x-scroll md:overflow-x-hidden snap-x py-5 rounded-md drop-shadow-xl">
-        {dataCategory.categoryProducts.map((data, i) => (
+        {data.categoryProducts.map((data, i) => (
           <Link href={`category/${data.slug}`} key={i}>
             <div className="flex flex-col px-2 items-center">
-              <div className="bg-[#99CCDB] w-16 h-16 rounded-full">
+              <div className="bg-gradient-to-br from-indigo-300 from-50% via-sky-500 via-90% to-emerald-300 to-90% w-16 h-16 rounded-full">
                 <Image
                   className="w-full p-4"
                   src={data.image}

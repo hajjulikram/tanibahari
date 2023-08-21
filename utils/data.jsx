@@ -1,4 +1,4 @@
-const dataCategory = {
+const data = {
   categoryProducts: [
     {
       name: 'Benih dan bibit',
@@ -78,6 +78,54 @@ const dataCategory = {
       description: 'peralatan kebun',
     },
   ],
+
+  product: [
+    {
+      name: 'Bibit Cabe Rawit Rawita F1 - 350 Biji',
+      slug: 'bibit-cabe-rawit',
+      category: 'Benih Sayuran',
+      image: '/assets/images/product/caberawit.jpg',
+      discount: 'Rp. 27.000.-',
+      price: 'Rp. 23.000,-',
+      description: 'benih dan bibit',
+    },
+    {
+      name: 'Bibit Sawi Hijau',
+      slug: 'bibit-sawi-hijau',
+      category: 'Benih Sayuran',
+      image: '/assets/images/product/sawihijau.jpg',
+      discount: 'Rp. 27.000.-',
+      price: 'Rp. 23.000,-',
+      description: 'benih dan bibit',
+    },
+    {
+      name: 'Pupuk Cair',
+      slug: 'pupuk-cair',
+      category: 'Pupuk',
+      image: '/assets/images/product/pupukcair.jpg',
+      discount: 'Rp. 27.000.-',
+      price: 'Rp. 23.000,-',
+      description: 'benih dan bibit',
+    },
+    {
+      name: 'Bibit Cabe Rawit Rawita F1 - 350 Biji',
+      slug: 'bibit-cabe-rawit',
+      category: 'Benih Sayuran',
+      image: '/assets/images/product/caberawit.jpg',
+      discount: 'Rp. 27.000.-',
+      price: 'Rp. 23.000,-',
+      description: 'benih dan bibit',
+    },
+    {
+      name: 'Bibit Sawi Hijau',
+      slug: 'bibit-sawi-hijau',
+      category: 'Benih Sayuran',
+      image: '/assets/images/product/sawihijau.jpg',
+      discount: 'Rp. 27.000.-',
+      price: 'Rp. 23.000,-',
+      description: 'benih dan bibit',
+    },
+  ],
 };
 
-export default dataCategory;
+export default data;
