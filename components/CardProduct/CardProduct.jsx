@@ -10,18 +10,17 @@ export default function CardProduct() {
     <div className="flex gap-2 -mx-5 overflow-x-scroll md:overflow-x-hidden  snap-x py-5 rounded-md drop-shadow-xl min-[640px]:justify-center">
       {data.product.map((product, i) => (
         <div
-          className="w-64 bg-gray-100 px-3 py-3 rounded-lg drop-shadow-md relative"
+          className="w-64 bg-gray-100 px-3 py-3 rounded-lg drop-shadow-md "
           key={i}
         >
-          <div className="">
-            <Image
-              className="w-full"
-              src={product.image}
-              width={200}
-              height={200}
-              alt={product.slug}
-            />
-          </div>
+          <Image
+            className="h-40 w-full object-cover object-center rounded-md"
+            src={product.image}
+            width={200}
+            height={200}
+            alt={product.slug}
+          />
+
           <div className="pt-2">
             <h1 className="text-[#0F9062] font-bold max-[640px]:text-sm">
               {product.name}
