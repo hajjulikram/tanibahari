@@ -18,7 +18,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className="lg:px-24 px-5">
+    <div className="xl:px-24 px-5">
       <Swiper
         rewind={false}
         pagination={true}
@@ -29,7 +29,7 @@ export default function HeroSection() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Keyboard]}
-        className="mySwiper w-full  lg:h-96 h-36 rounded-lg"
+        className="mySwiper w-full  xl:h-96 h-36 rounded-lg"
       >
         {imageList.map((image, i) => (
           <SwiperSlide className="swiper-slide rounded-lg bg-cover bg-center" key={i} style={{backgroundImage: `url(${image})`}}/>

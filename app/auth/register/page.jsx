@@ -21,13 +21,29 @@ function page() {
           <form className="mt-5 w-full">
             <div className="mb-5">
               <label
+                htmlFor="nama-lengkap"
+                className="block mb-2 px-1 text-sm font-semibold text-gray-600"
+              >
+                Nama Lengkap
+              </label>
+              <input
+                type="text"
+                name="nama_lengkap"
+                id="nama_lengkap"
+                placeholder="Masukkan Nama Lengkap..."
+                className="w-full border-2 border-gray-400 p-3 rounded outline-none focus:border-blue-500"
+                autoFocus
+                required
+              />
+
+              <label
                 htmlFor="email"
                 className="block mb-2 px-1 text-sm font-semibold text-gray-600"
               >
-                Email/Username
+                Email
               </label>
               <input
-                type="email"
+                type="text"
                 name="email"
                 id="email"
                 placeholder="Masukkan Email..."
@@ -35,9 +51,10 @@ function page() {
                 autoFocus
                 required
               />
+
               <label
                 htmlFor="password"
-                className="block mb-2 mt-3 px-1 text-sm font-semibold text-gray-600"
+                className="block mb-2 px-1 text-sm font-semibold text-gray-600"
               >
                 Password
               </label>
@@ -46,22 +63,39 @@ function page() {
                 name="password"
                 id="password"
                 placeholder="Masukkan Password..."
+                className="w-full border-2 border-gray-400 p-3 rounded outline-none focus:border-blue-500"
+                autoFocus
+                required
+              />
+
+              <label
+                htmlFor="confirm-password"
+                className="block mb-2 mt-3 px-1 text-sm font-semibold text-gray-600"
+              >
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                placeholder="Masukkan Password..."
                 className="w-full border-2 mb-7 border-gray-400 p-3 rounded outline-none focus:border-blue-500"
                 autoFocus
                 required
               />
+
               <Link
                 href={"/auth/login"}
                 className="w-full py-2 flex justify-center rounded-md bg-tani-green text-tani-yellow font-semibold"
               >
-                Masuk
+                Daftar
               </Link>
 
-              <a href="" className="float-right mt-1">
+              {/* <a href="" className="float-right mt-1">
                 <button className="w-full py-2 flex font-light text-sm">
                   Lupa Password?
                 </button>
-              </a>
+              </a> */}
 
               <div className="flex justify-center items-center w-full py-1">
                 <p className="text-sm text-tani-grey">
