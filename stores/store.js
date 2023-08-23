@@ -1,8 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
-import productReducer from "./reducers/productSlice";
+//store.jsx
+
+"use client";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import counterReducer from "./reducers/counterSlice";
+
+const rootReducer = combineReducers({
+  counter: counterReducer,
+  //add all your reducers here
+});
 
 export const store = configureStore({
-  reducer: {
-    products: productReducer,
-  },
+  reducer: rootReducer,
 });
