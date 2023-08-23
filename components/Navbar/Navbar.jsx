@@ -1,8 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import Icon from '@mdi/react';
-import Link from 'next/link';
-import { mdiEmail, mdiWhatsapp, mdiHelpCircleOutline, mdiBell } from '@mdi/js';
+import React from "react";
+import Image from "next/image";
+import Icon from "@mdi/react";
+import Link from "next/link";
+import { mdiEmail, mdiWhatsapp, mdiHelpCircleOutline, mdiBell } from "@mdi/js";
 
 function Navbar() {
   return (
@@ -83,13 +83,13 @@ function Navbar() {
 
         <div className="flex gap-3 items-center">
           <Link
-            href={'/auth/login'}
+            href={"/auth/login"}
             className="px-5 py-1 rounded-lg bg-tani-green text-tani-yellow font-semibold"
           >
             Masuk
           </Link>
           <Link
-            href={'/auth/register'}
+            href={"/auth/register"}
             className="px-5 py-1 rounded-lg bg-tani-blue text-tani-yellow font-semibold"
           >
             Daftar
