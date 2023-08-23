@@ -1,12 +1,17 @@
 'use client'
 
 import React, { useEffect } from "react";
+import React from "react";
+
 import Image from "next/image";
 import Icon from "@mdi/react";
 import Link from "next/link";
-import { mdiEmail, mdiWhatsapp, mdiHelpCircleOutline, mdiBell } from "@mdi/js";
+import { mdiEmail, mdiHelpCircleOutline, mdiBell } from "@mdi/js";
+
 
 import { initCollapses } from "flowbite";
+
+
 
 function Navbar() {
 
