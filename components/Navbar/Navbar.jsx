@@ -1,23 +1,18 @@
-'use client'
+"use client";
 
 import React, { useEffect } from "react";
-import React from "react";
 
 import Image from "next/image";
 import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiEmail, mdiHelpCircleOutline, mdiBell } from "@mdi/js";
 
-
 import { initCollapses } from "flowbite";
 
-
-
 function Navbar() {
-
   useEffect(() => {
     setTimeout(() => {
-    initCollapses();
+      initCollapses();
     }, 1000);
   }, []);
 
@@ -110,9 +105,9 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav class="bg-white border-gray-200 dark:bg-gray-900 xl:hidden">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" class="flex items-center">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 xl:hidden">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" className="flex items-center">
             <Image
               className="w-32 "
               src="/assets/images/TaniBahari.png"
@@ -121,16 +116,16 @@ function Navbar() {
               height={800}
             />
           </a>
-          <div class="flex xl:order-2">
+          <div className="flex xl:order-2">
             <button
               type="button"
               data-collapse-toggle="navbar-search"
               aria-controls="navbar-search"
               aria-expanded="false"
-              class="xl:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+              className="xl:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
             >
               <svg
-                class="w-5 h-5"
+                className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -138,18 +133,18 @@ function Navbar() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                 />
               </svg>
-              <span class="sr-only">Search</span>
+              <span className="sr-only">Search</span>
             </button>
-            <div class="relative hidden xl:block">
-              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <div className="relative hidden xl:block">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -157,31 +152,31 @@ function Navbar() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                   />
                 </svg>
-                <span class="sr-only">Search icon</span>
+                <span className="sr-only">Search icon</span>
               </div>
               <input
                 type="text"
                 id="search-navbar"
-                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-tani-green focus:border-tani-green dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-tani-green dark:focus:border-tani-green"
+                className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-tani-green focus:border-tani-green dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-tani-green dark:focus:border-tani-green"
                 placeholder="Search..."
               />
             </div>
             <button
               data-collapse-toggle="navbar-search"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-search"
               aria-expanded="false"
             >
-              <span class="sr-only">Open main menu</span>
+              <span className="sr-only">Open main menu</span>
               <svg
-                class="w-5 h-5"
+                className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -189,22 +184,22 @@ function Navbar() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
             </button>
           </div>
           <div
-            class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1"
+            className="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1"
             id="navbar-search"
           >
-            <div class="relative mt-3 xl:hidden">
-              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <div className="relative mt-3 xl:hidden">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -212,9 +207,9 @@ function Navbar() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                   />
                 </svg>
@@ -222,12 +217,11 @@ function Navbar() {
               <input
                 type="text"
                 id="search-navbar"
-                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-tani-green focus:border-tani-green dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-tani-green dark:focus:border-tani-green"
+                className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-tani-green focus:border-tani-green dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-tani-green dark:focus:border-tani-green"
                 placeholder="Search..."
               />
             </div>
-            <ul class="flex gap-3 flex-col p-4 xl:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 xl:mt-0 xl:border-0 xl:bg-white dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700">
-              
+            <ul className="flex gap-3 flex-col p-4 xl:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-8 xl:mt-0 xl:border-0 xl:bg-white dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <Link
                   href={"/auth/login"}
